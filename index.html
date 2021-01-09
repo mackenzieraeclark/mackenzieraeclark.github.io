@@ -29,11 +29,28 @@
       max-width: 90%;
     }
 
+    button {
+      border: none;
+      background-color: gray;
+      padding: 2.5%;
+      border-radius: 25px;
+    }
+
+    .buttonA {
+      text-decoration: none;
+      color: #eee;
+    }
+
+    .buttonA:hover {
+      color: rgb(184, 184, 184);
+    }
+
     a {
       color: #333;
     }
     a:hover {
       color: gray;
+      animation: forwards;
     }
 
     .container {
@@ -179,7 +196,7 @@
       My name is <b>Mackenzie Clark</b>. I am seeking a full-time position in design and development.
       <br/>
       <br/>
-      I aim to design and build human-centered solutions. <br/> My focus is digital storytelling, developing web-based content through the lens of intentional design. <a href="mailto:clark.rmackenzie@gmail.com?subject=Resumé Consulting">Contact me</a>  
+      I aim to design for and build human-centered solutions. <br/> My focus is digital storytelling: developing web-based content through the lens of intentional design. <a href="mailto:clark.rmackenzie@gmail.com?subject=Resumé Consulting">Contact me</a>  
       for project collaboration or more information.
     </div>
     <div class="links">
@@ -198,21 +215,59 @@
     <div class="slider">
       <div class="slide">
         <img src="assets/reni.png">
+        <div style="text-align: left;">
+          <br/>
+          <br/>
+          <br/>
+          <button><a href="https://reniconsultancy.github.io/" target="_blank" class="buttonA">Demo</a></button>
+          &nbsp; &nbsp; Deployed with GitHub
+          <br/>
+          <br/>
+          <button><a href="https://github.com/reniconsultancy/reniconsultancy.github.io" target="_blank" class="buttonA">Repository</a></button>
+          &nbsp; &nbsp; React.js & Sass
+        </div>
       </div>
       <div class="slide">
         <img src="assets/boroughd.png">
+        <div style="text-align: left;">
+          <br/>
+          <br/>
+          <br/>
+          <button><a href="https://aptreact.web.app/" target="_blank" class="buttonA">Demo</a></button>
+          &nbsp; &nbsp; Deployed with Heroku
+          <br/>
+          <br/>
+          <button><a href="https://github.com/tylerlibstag/muchXc1te" target="_blank" class="buttonA">Repository</a></button>
+          &nbsp; &nbsp; React.js & Firebase
+        </div>
       </div>
       <div class="slide">
         <img src="assets/heimdall.png">
+        <div style="text-align: left;">
+          <br/>
+          <br/>
+          <br/>
+          <button><a href="https://heimdall-36558.herokuapp.com/" target="_blank" class="buttonA">Demo</a></button>
+          &nbsp; &nbsp; Deployed with Heroku
+          <br/>
+          <br/>
+          <button><a href="https://github.com/mackenzieraeclark/heimdall" target="_blank" class="buttonA">Repository</a></button>
+          &nbsp; &nbsp; Node.js & Express.js
+        </div>
       </div>
       <div class="slide">
         <img src="assets/scribe.png">
-      </div>
-      <div class="slide">
-        <img src="assets/huddle.png">
-      </div>
-      <div class="slide">
-        <img src="assets/eatdrink.png">
+        <div style="text-align: left;">
+          <br/>
+          <br/>
+          <br/>
+          <button><a href="https://stormy-badlands-96335.herokuapp.com/" target="_blank" class="buttonA">Demo</a></button>
+          &nbsp; &nbsp; Deployed with Heroku
+          <br/>
+          <br/>
+          <button><a href="https://github.com/mackenzieraeclark/Scribe" target="_blank" class="buttonA">Repository</a></button>
+          &nbsp; &nbsp; Node.js & Express.js
+        </div>
       </div>
     </div>
   </div>
@@ -230,6 +285,12 @@
       </div>
     </div>
   </div>
+
+  <footer style="text-align: center;">
+    <br/>
+    <br/>
+    Made With 💜 in <a href="https://twitter.com/mackenziedev1" target="_blank">NYC</a>
+  </footer>
 
   <script>
     var anchor = document.querySelector('#anchor');
