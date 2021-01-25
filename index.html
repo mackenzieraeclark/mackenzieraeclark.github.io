@@ -22,6 +22,27 @@
       transition: 0.5s;
       height: 100vh;
       width: 100vw;
+      scroll-behavior: smooth;
+    }
+
+    img {
+      max-width: 90%;
+    }
+
+    button {
+      border: none;
+      background-color: gray;
+      padding: 2.5%;
+      border-radius: 25px;
+    }
+
+    .buttonA {
+      text-decoration: none;
+      color: #eee;
+    }
+
+    .buttonA:hover {
+      color: rgb(184, 184, 184);
     }
 
     a {
@@ -62,6 +83,109 @@
       }
     }
 
+    .scroll-down {
+      position: relative;
+      width: 24px;
+      height: 24px;
+    }
+
+    .chevron {
+      position: absolute;
+      width: 28px;
+      height: 8px;
+      opacity: 0;
+      transform: scale3d(0.5, 0.5, 0.5);
+      animation: move 3s ease-out infinite;
+    }
+
+    .chevron:first-child {
+      animation: move 3s ease-out 1s infinite;
+    }
+
+    .chevron:nth-child(2) {
+      animation: move 3s ease-out 2s infinite;
+    }
+
+    .chevron:before,
+    .chevron:after {
+      content: ' ';
+      position: absolute;
+      top: 0;
+      height: 100%;
+      width: 51%;
+      background: #333;
+    }
+
+    .chevron:before {
+      left: 0;
+      transform: skew(0deg, 30deg);
+    }
+
+    .chevron:after {
+      right: 0;
+      width: 50%;
+      transform: skew(0deg, -30deg);
+    }
+
+    @keyframes move {
+      25% {
+        opacity: 1;
+
+      }
+      33% {
+        opacity: 1;
+        transform: translateY(30px);
+      }
+      67% {
+        opacity: 1;
+        transform: translateY(40px);
+      }
+      100% {
+        opacity: 0;
+        transform: translateY(55px) scale3d(0.5, 0.5, 0.5);
+      }
+    }
+
+    .slider {
+      width: 500px;
+      height: 500px;
+      display: flex;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      scroll-snap-type: x mandatory;
+    }
+    .slide {
+      width: 500px;
+      flex-shrink: 0;
+      height: 100%;
+      scroll-snap-align: start;
+      padding: 0% 15%;
+    }
+
+    .row {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+        }
+
+    .column {
+      flex: 50%;
+    }
+
+    @media screen and (max-width: 600px) {
+      .column {
+        width: 100%;
+      }
+
+      .slider {
+          width: 300px;
+          height: 300px;
+        }
+        .slide {
+          width: 300px;
+        }
+    }
+
   </style>
 
 </head>
@@ -69,7 +193,7 @@
 <body>
   <div class="container">
     <div class="main">
-      My name is <b>Mackenzie Clark</b>. I am seeking a full-time position in frontend development or UX engineering.
+      My name is <b>Mackenzie Clark</b>. I am seeking a full-time position in design and development.
       <br/>
       <br/>
       I aim to design for and build human-centered solutions, developing web-based content through the lens of intentional design. <a href="mailto:clark.rmackenzie@gmail.com?subject=Resumé Consulting">Contact me</a>  
@@ -78,7 +202,87 @@
     <div class="links">
       <a href="https://github.com/mackenzieraeclark" target="_blank">GitHub</a> -
       <a href="https://www.linkedin.com/in/mackenzieraeclark/" target="_blank">LinkedIn</a> -
-      <a href="https://drive.google.com/file/d/1UROPq-3pN2HwxGIOpEXUMSVkqyagf9xh/view?usp=sharing" target="_blank">Resumé</a>
+      <a href="https://drive.google.com/file/d/1Sho1gILr2nC-CkVfEEOvofD1JlDbq1cj/view?usp=sharing" target="_blank">Resumé</a>
+    </div>
+    <div class="scroll-down">
+      <div class="chevron"></div>
+      <div class="chevron"></div>
+      <div class="chevron"></div>
+    </div>
+  </div>
+
+  <div class="container" id="anchor">
+    <div class="slider">
+      <div class="slide">
+        <img src="assets/reni.png">
+        <div style="text-align: left;">
+          <br/>
+          <br/>
+          <br/>
+          <button><a href="https://reniconsultancy.github.io/" target="_blank" class="buttonA">Demo</a></button>
+          &nbsp; &nbsp; Deployed with GitHub
+          <br/>
+          <br/>
+          <button><a href="https://github.com/reniconsultancy/reniconsultancy.github.io" target="_blank" class="buttonA">Repository</a></button>
+          &nbsp; &nbsp; React.js & Sass
+        </div>
+      </div>
+      <div class="slide">
+        <img src="assets/boroughd.png">
+        <div style="text-align: left;">
+          <br/>
+          <br/>
+          <br/>
+          <button><a href="https://aptreact.web.app/" target="_blank" class="buttonA">Demo</a></button>
+          &nbsp; &nbsp; Deployed with Heroku
+          <br/>
+          <br/>
+          <button><a href="https://github.com/tylerlibstag/muchXc1te" target="_blank" class="buttonA">Repository</a></button>
+          &nbsp; &nbsp; React.js & Firebase
+        </div>
+      </div>
+      <div class="slide">
+        <img src="assets/heimdall.png">
+        <div style="text-align: left;">
+          <br/>
+          <br/>
+          <br/>
+          <button><a href="https://heimdall-36558.herokuapp.com/" target="_blank" class="buttonA">Demo</a></button>
+          &nbsp; &nbsp; Deployed with Heroku
+          <br/>
+          <br/>
+          <button><a href="https://github.com/mackenzieraeclark/heimdall" target="_blank" class="buttonA">Repository</a></button>
+          &nbsp; &nbsp; Node.js & Express.js
+        </div>
+      </div>
+      <div class="slide">
+        <img src="assets/scribe.png">
+        <div style="text-align: left;">
+          <br/>
+          <br/>
+          <br/>
+          <button><a href="https://stormy-badlands-96335.herokuapp.com/" target="_blank" class="buttonA">Demo</a></button>
+          &nbsp; &nbsp; Deployed with Heroku
+          <br/>
+          <br/>
+          <button><a href="https://github.com/mackenzieraeclark/Scribe" target="_blank" class="buttonA">Repository</a></button>
+          &nbsp; &nbsp; Node.js & Express.js
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="column">
+        <img src="assets/underConstruction.GIF" alt="This project is currently under construction">
+      </div>
+      <div class="column">
+        RENI Consultancy, LLC is currently under construction.
+        <br/>
+        <br/>
+        Follow our <a href="https://github.com/reniconsultancy" target="_blank">progress</a>.
+      </div>
     </div>
   </div>
 
