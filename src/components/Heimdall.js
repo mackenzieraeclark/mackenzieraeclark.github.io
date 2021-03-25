@@ -14,10 +14,10 @@ function Heimdall() {
                 <img src={five} alt="Mock" />
                 <img src={six} alt="Mock" />
             </div>
-            <div>
+            <div className="hide">
                 <ReactGoogleSlides
-                width={320}
-                height={320}
+                width={600}
+                height={480}
                 slidesLink="https://docs.google.com/presentation/d/1T-YdiHFYf2T5Q7RMeEUTXqrIl5LmTqEJ5Oa7vmZd1Z0/"
                 showControls
                 />

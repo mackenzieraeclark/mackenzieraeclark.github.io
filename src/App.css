@@ -46,13 +46,15 @@ img {
   justify-content: center;
 }
 
-/* Screen larger than 600px? 3 columns */
 @media (max-width: 600px) {
   .container { 
     display: grid !important; 
   }
   img {
     max-width: 100%;
+  }
+  .hide {
+    display: none !important;
   }
 }
 

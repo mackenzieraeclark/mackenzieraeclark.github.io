@@ -14,10 +14,10 @@ function Boroughd() {
                 <img src={two} alt="Mock" />
                 <img src={three} alt="Mock" />
             </div>
-            <div>
+            <div className="hide">
                 <ReactGoogleSlides
-                width={320}
-                height={320}
+                width={600}
+                height={480}
                 slidesLink="https://docs.google.com/presentation/d/1231V9x2p8xWJrWRiRQtW5TyG07oTEhgn12qPeofyeNQ/"
                 showControls
                 />

@@ -14,10 +14,10 @@ function EatDrink() {
                 <img src={eight} alt="Mock" />
                 <img src={nine} alt="Mock" />
             </div>
-            <div>
+            <div className="hide">
                 <ReactGoogleSlides
-                width={320}
-                height={320}
+                width={600}
+                height={480}
                 slidesLink="https://docs.google.com/presentation/d/1P0hCt3BgafeGDQx1uszJzlRdZtIioHAcCN822fE21cc/"
                 showControls
                 />
