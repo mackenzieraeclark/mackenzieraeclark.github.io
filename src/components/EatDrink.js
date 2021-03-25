@@ -16,8 +16,8 @@ function EatDrink() {
             </div>
             <div>
                 <ReactGoogleSlides
-                width={480}
-                height={480}
+                width={320}
+                height={320}
                 slidesLink="https://docs.google.com/presentation/d/1P0hCt3BgafeGDQx1uszJzlRdZtIioHAcCN822fE21cc/"
                 showControls
                 />

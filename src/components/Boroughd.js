@@ -16,8 +16,8 @@ function Boroughd() {
             </div>
             <div>
                 <ReactGoogleSlides
-                width={480}
-                height={480}
+                width={320}
+                height={320}
                 slidesLink="https://docs.google.com/presentation/d/1231V9x2p8xWJrWRiRQtW5TyG07oTEhgn12qPeofyeNQ/"
                 showControls
                 />
