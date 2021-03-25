@@ -1,7 +1,11 @@
 function EatDrink() {
     return ( 
         <div className="App-header">
-            EatDrink
+            <div className="container">
+                <h1>hey there</h1>
+                <h1>hey there</h1>
+                <h1>hey there</h1>
+            </div>
         </div>
     );
 }
