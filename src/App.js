@@ -1,10 +1,14 @@
 // import logo from './logo.GIF';
 import './App.css';
 
+import Boroughd from "./components/Boroughd";
+import Heimdall from "./components/Heimdall";
+import EatDrink from "./components/EatDrink";
+
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
+      <div className="App-header">
       Hi there 👋 <br/> My name is Mackenzie Clark.<br/><br/> 
       I aim to design for and build digital solutions
       through a lens of human-centered design.
@@ -22,7 +26,16 @@ function App() {
           <a href="https://mackenzieraeclark.github.io/Resume">Resume</a>
         </button>
       </div>
-      </header>
+      <br/><br/>
+      <div class="scroll-down">
+        <div class="chevron"></div>
+        <div class="chevron"></div>
+        <div class="chevron"></div>
+      </div>
+      </div>
+      <Boroughd/>
+      <Heimdall/>
+      <EatDrink/>
     </div>
   );
 }
