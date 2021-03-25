@@ -56,6 +56,9 @@ img {
   .hide {
     display: none !important;
   }
+  a {
+    font-size: small !important;
+  }
 }
 
 .App-link {
