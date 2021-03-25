@@ -35,7 +35,6 @@ img {
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
-  grid-gap: 1rem;
   align-items: center;
   justify-content: center;
 }
@@ -48,8 +47,13 @@ img {
 }
 
 /* Screen larger than 600px? 3 columns */
-@media (min-width: 600px) {
-  .container-item { grid-template-columns: repeat(3, 1fr); }
+@media (max-width: 600px) {
+  .container { 
+    display: grid !important; 
+  }
+  img {
+    max-width: 100%;
+  }
 }
 
 .App-link {
@@ -74,6 +78,10 @@ button {
   box-shadow: 10px 10px 20px #000000, inset -18px -18px 20px #30343A;
   border-radius: 115.5px;
   border: none;
+}
+
+button:hover {
+  background-color: rgb(148, 148, 148);
 }
 
 .links {

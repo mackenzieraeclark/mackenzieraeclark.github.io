@@ -26,7 +26,7 @@ function App() {
           <a href="https://mackenzieraeclark.github.io/Resume">Resume</a>
         </button>
       </div>
-      <br/><br/>
+      <br/><br/><br/>
       <div class="scroll-down">
         <div class="chevron"></div>
         <div class="chevron"></div>
